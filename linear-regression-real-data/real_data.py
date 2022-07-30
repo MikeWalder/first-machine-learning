@@ -3,6 +3,8 @@ import pandas as pd
 import tensorflow as tf
 from matplotlib import pyplot as plt
 
+
+
 # Adjust the granularity of reporting
 pd.options.display.max_rows = 12
 pd.options.display.float_format = "{:.if}".format
@@ -42,6 +44,7 @@ def build_model(my_learning_rate):
     return model        
 
 
+# fonction d'entraînement du modèle
 def train_model(model, df, feature, label, epochs, batch_size):
     """Train the model by feeding it data."""
 
